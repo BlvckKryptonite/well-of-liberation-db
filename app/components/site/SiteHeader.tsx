@@ -72,7 +72,7 @@ export function SiteHeader() {
           <img
             src={LOGO_URL}
             alt="Well of Liberation"
-            className="h-12 w-auto mix-blend-multiply md:h-14"
+            className="h-14 w-auto mix-blend-multiply md:h-16"
           />
         </Link>
 
