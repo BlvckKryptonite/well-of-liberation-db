@@ -80,9 +80,9 @@ export default function HomeRoute() {
         <img
           src={SITE_IMAGES.smallActs}
           alt="Women from a community supported by Well of Liberation"
-          className="w-full rounded-3xl object-cover shadow-xl"
+          className="order-2 w-full rounded-3xl object-cover shadow-xl lg:order-1"
         />
-        <div>
+        <div className="order-1 lg:order-2">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
             Our mission
           </p>
