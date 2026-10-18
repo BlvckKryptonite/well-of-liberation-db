@@ -38,14 +38,14 @@ visual direction — read and preserve them on every subsequent build; do not
 re-derive a new direction. The first UI pass must fill these fields in as
 part of that build, not leave them as an empty template.
 
-- Product mode: `operate` | `read` | `persuade` | `experience`
-- Audience and cadence:
-- Visual world (name + the feeling it creates):
-- Palette family + neutral undertone:
-- Type treatment:
-- Composition:
-- Shape language:
-- Anti-references (defaults this app must not drift toward):
+- Product mode: `persuade`
+- Audience and cadence: prospective donors, partners and volunteers visiting a humanitarian NGO site; low-frequency, high-trust visits.
+- Visual world (name + the feeling it creates): "Warm Hope" — sunlit community photography, deep forest green and marigold gold, a feeling of warmth, dignity and forward motion.
+- Palette family + neutral undertone: deep green (165 hue, primary) with marigold/amber accent (36 hue); warm cream neutrals (40 hue) in light mode, deep green-black in dark mode.
+- Type treatment: Inter Variable; heavy extrabold display headlines with tight tracking, small uppercase amber eyebrows with wide tracking, relaxed muted body copy.
+- Composition: generous section padding, asymmetric two-column heroes, photo-led sections, three-card pillars, full-width colored closing band before the footer.
+- Shape language: rounded-3xl photo frames and cards, pill buttons, soft shadows; the logo is shown with multiply blending on cream.
+- Anti-references (defaults this app must not drift toward): cold gray SaaS dashboards, dense nav-heavy layouts, government-portal styling, stock "hero with blue gradient" templates, overlay text that competes with photography.
 
 ## Agent-Native is structural, not visual
 
