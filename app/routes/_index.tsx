@@ -38,37 +38,41 @@ const PILLARS = [
 export default function HomeRoute() {
   return (
     <div>
-      <section className="mx-auto max-w-7xl px-5 pt-6 md:pt-10 lg:px-8">
-        <div className="relative isolate flex min-h-[600px] items-center overflow-hidden rounded-[2rem] shadow-2xl md:min-h-[680px]">
-          <img
-            src={SITE_IMAGES.heroBanner}
-            alt="Children and community members gathered together"
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary/90 via-primary/50 to-transparent" />
-          <div className="max-w-2xl px-8 py-16 text-primary-foreground md:px-16">
-            <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-              It&rsquo;s time to <span className="text-accent">change lives.</span>
-            </h1>
-            <p className="mt-6 max-w-lg text-lg leading-relaxed text-primary-foreground/90">
-              Join the movement. Be part of a legacy of transforming lives forever,
-              one community at a time.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Link
-                to="/make-a-difference"
-                className="select-none rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-sm transition hover:brightness-105"
-              >
-                Donate now
-              </Link>
-              <Link
-                to="/mission"
-                className="inline-flex select-none items-center gap-2 rounded-full border border-primary-foreground/40 px-7 py-3.5 text-sm font-semibold transition hover:bg-primary-foreground/10"
-              >
-                Our mission <IconArrowRight size={16} />
-              </Link>
-            </div>
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 md:py-24 lg:grid-cols-2 lg:px-8">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+            Humanitarian vision
+          </p>
+          <h1 className="mt-5 text-5xl font-extrabold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+            It&rsquo;s time to <span className="text-primary">change lives.</span>
+          </h1>
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
+            Join the movement. Be part of a legacy of transforming lives forever,
+            one community at a time.
+          </p>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <Link
+              to="/make-a-difference"
+              className="select-none rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-sm transition hover:brightness-105"
+            >
+              Donate now
+            </Link>
+            <Link
+              to="/mission"
+              className="inline-flex select-none items-center gap-2 rounded-full border border-border px-7 py-3.5 text-sm font-semibold transition hover:bg-secondary"
+            >
+              Our mission <IconArrowRight size={16} />
+            </Link>
           </div>
+        </div>
+
+        <div className="relative">
+          <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-accent/20 blur-2xl" />
+          <img
+            src={SITE_IMAGES.heroCampaign}
+            alt="Children gathered in a community, with the message: It's time to change lives"
+            className="w-full rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
+          />
         </div>
       </section>
 

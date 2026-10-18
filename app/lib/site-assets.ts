@@ -6,7 +6,6 @@ const BUILDER_OBJECT = (path: string) =>
 
 export const SITE_IMAGES = {
   logo: BUILDER_IMAGE("3334ec4aed7a4da491ee551032c35dc2"),
-  heroBanner: BUILDER_IMAGE("f3aa2ffa5b274b6a9d3a16d4a1d97b3b"),
   heroCampaign: BUILDER_IMAGE("9752631bab2841409a9d9468eccbecac"),
   smallActs: BUILDER_IMAGE("cdb9422eba384e9185277d5fc99c6c76"),
   field1: BUILDER_OBJECT(
