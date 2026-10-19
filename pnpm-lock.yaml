@@ -95,9 +95,6 @@ importers:
       '@neondatabase/serverless':
         specifier: ^1.0.2
         version: 1.1.0
-      '@netlify/database':
-        specifier: ^2.0.1
-        version: 2.0.1(@electric-sql/pglite@0.5.8)(@libsql/client@0.15.15)(postgres@3.4.9)
       '@openrouter/ai-sdk-provider':
         specifier: ^2.9.1
         version: 2.10.0(ai@6.0.258(zod@4.6.5))(zod@4.6.5)
@@ -1871,10 +1868,6 @@ packages:
   '@neondatabase/serverless@1.1.0':
     resolution: {integrity: sha512-r3ZZhRjEcfEdKIZnoB1RusNgvHuaBRqfCzV4Gi+5A9yUX0S4HTws/ASWqt13wL4y4I+0rqsWGdA2w7EQXHi3+Q==}
     engines: {node: '>=19.0.0'}
-
-  '@netlify/database@2.0.1':
-    resolution: {integrity: sha512-ikz0NcVgeOe62Sic5MEFMyv/yMWtzhMLcynXTDftTL3rVEMoJL16mjnU9gNZ6G80lBngjjPjZrDOyAS1j+Kt3A==}
-    engines: {node: '>=22.12.0'}
 
   '@netlify/runtime-utils@3.0.0':
     resolution: {integrity: sha512-OHo40+V3QZkR+UrDjqhN+LekrAby/dSSJxsvyYs9i88E/mSl3goB/ysoL+VYROm190egxmQyRYlHK7vL4GeHBQ==}
@@ -8484,36 +8477,6 @@ snapshots:
     optional: true
 
   '@neondatabase/serverless@1.1.0': {}
-
-  '@netlify/database@2.0.1(@electric-sql/pglite@0.5.8)(@libsql/client@0.15.15)(postgres@3.4.9)':
-    dependencies:
-      '@neondatabase/serverless': 1.1.0
-      '@netlify/runtime-utils': 3.0.0
-      pg: 8.23.1
-      waddler: 0.1.1(@electric-sql/pglite@0.5.8)(@libsql/client@0.15.15)(@neondatabase/serverless@1.1.0)(pg@8.23.1)(postgres@3.4.9)
-      ws: 8.22.0
-    transitivePeerDependencies:
-      - '@clickhouse/client'
-      - '@cloudflare/workers-types'
-      - '@duckdb/node-api'
-      - '@electric-sql/pglite'
-      - '@libsql/client'
-      - '@libsql/client-wasm'
-      - '@op-engineering/op-sqlite'
-      - '@planetscale/database'
-      - '@tidbcloud/serverless'
-      - '@vercel/postgres'
-      - '@xata.io/client'
-      - better-sqlite3
-      - bufferutil
-      - bun-types
-      - duckdb
-      - gel
-      - mysql2
-      - pg-native
-      - pg-query-stream
-      - postgres
-      - utf-8-validate
 
   '@netlify/runtime-utils@3.0.0': {}
 
