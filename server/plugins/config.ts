@@ -7,7 +7,14 @@ import { defineAppConfig } from "@agent-native/core/server";
 // Never disable agent-chat/auth/core-routes — they carry most of the app.
 export default defineAppConfig({
   plugins: {
-    disabled: ["integrations", "observational-memory", "sentry", "terminal", "auth"],
+    disabled: [
+      "integrations",
+      "observational-memory",
+      "sentry",
+      "terminal",
+      "auth",
+      "agent-chat",
+    ],
   },
   app: {
     homePath: "/",
