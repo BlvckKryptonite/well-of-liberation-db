@@ -1,9 +1,4 @@
 {
-  "database": {
-    "kind": "postgres",
-    "migrations": "drizzle",
-    "schemaDir": "drizzle"
-  },
   "hosting": {
     "buildCommand": "pnpm run build",
     "buildOutputDir": "dist",
