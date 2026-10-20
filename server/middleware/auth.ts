@@ -1,6 +1,4 @@
-import { runAuthGuard } from "@agent-native/core/server";
 import { defineEventHandler } from "h3";
 
-export default defineEventHandler(async (event) => {
-  return runAuthGuard(event);
-});
+// No auth on this public marketing site — pass through every request.
+export default defineEventHandler(() => null);
